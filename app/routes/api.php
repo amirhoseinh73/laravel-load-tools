@@ -42,8 +42,6 @@ Route::middleware( "setLocale" )
             Route::get( "/", [ ToolsController::class, "index" ] );
             Route::get( "/list/{bookCode}", [ ToolsController::class, "listByArchive" ] );
             Route::get( "/{id}", [ ToolsController::class, "show" ] );
-            // Route::get( "/{id}", [ ToolsController::class, "show" ] );
-            // Route::get( "search/{name}", [ ToolsController::class, "search" ] );
 
             Route::post( "/", [ ToolsController::class, "store" ] );
             Route::match( [ "put", "patch" ], "/{id}", [ ToolsController::class, "update" ] );

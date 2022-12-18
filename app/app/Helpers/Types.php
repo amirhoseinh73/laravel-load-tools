@@ -37,8 +37,15 @@ class Types {
      * @param string $type `creator`|`viewer`|`game`
      * @return int
      */
-    public static function getToolTypeTinyInt( $type ) {
-        return array_search( $type, ( array_keys( explode( ",", self::ToolsType ) ) + 1 ) );
+    public static function getToolTypeTinyInt( string $type ) {
+        switch( $type ) {
+            case "creator":
+                return 1;
+            case "viewer":
+                return 2;
+            case "game":
+                return 3;
+        }
     }
 
     const ToolsCollection = "Mozaweb,Vascak,Phet,Toytheater,didax,flash";

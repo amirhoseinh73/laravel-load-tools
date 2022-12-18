@@ -27,7 +27,7 @@ class ToolsResource extends JsonResource
             "archive" => $this->archive,
             "width" => $this->width,
             "height" => $this->height,
-            "link" => url( app()->getLocale() . "/tools/load/$this->id" ),
+            "url" => url( app()->getLocale() . "/tools/load/$this->id" ),
             "locale" => app()->getLocale(),
             "created_at" => $this->created_at,
             "updated_at" => $this->updated_at,

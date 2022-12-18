@@ -19,7 +19,7 @@ class ToolsViewController extends Controller
         //switch tools by type
         switch( $tool->type ) {
             case 1: // creator
-                return abort( 403 );
+                return $this->_loadViewerTool( $tool ); //  abort( 403 );
             case 2: // viewer
                 return $this->_loadViewerTool( $tool );
             case 3: // game
