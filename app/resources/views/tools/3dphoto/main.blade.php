@@ -8,10 +8,11 @@
         <link rel="stylesheet" type="text/css" href="{{ asset("assets/tools/$key/css/nasakepek.css") }}" />
         
         <script type="text/javascript">
-            const key = "{{$key}}"
+            const url = "{{ url( '/' ) }}"
+            const key = "{{ $key }}"
         </script>
 
-        <script type="text/javascript" src="{{ asset( "assets/tools/global/js/lib/jquery-3.1.0.min.js" ) }}"></script>
+        <script type="text/javascript" src="{{ asset( "assets/tools/global/js/lib/jquery-3.2.0.min.js" ) }}"></script>
         <script type="text/javascript" src="{{ asset( "assets/tools/global/js/lib/hammer.min.js" ) }}"></script>
         <script type="text/javascript" src="{{ asset( "assets/tools/$key/js/nasakepek_obfusc_20191011145003.js" ) }}"></script>
     </head>
