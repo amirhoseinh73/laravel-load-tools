@@ -1,0 +1,24 @@
+[
+    {
+        "title"       : "عکس سه بعدی",
+        "description" : "مجموعه ای از تصاویر سه بعدی که با عینک قرمز-آبی قابل مشاهده است",
+        "key"       : "3dphoto",
+        "type"      : "viewer",
+        "icon"      : "3dphoto.png",
+        "collection": 1,
+        "archive"   : null,
+        "width"     : 690,
+        "height"    : 529
+    },
+    {
+        "title"       : "نمودار",
+        "description" : "یک راه سریع و ساده برای ایجاد نمودار های منحصر به فرد از قالب های تعبیه شده",
+        "key"       : "chart",
+        "type"      : "creator",
+        "icon"      : "chart.png",
+        "collection": 1,
+        "archive"   : "1000",
+        "width"     : 705,
+        "height"    : 510
+    }
+]

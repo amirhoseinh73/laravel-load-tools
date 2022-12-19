@@ -4,7 +4,7 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 
-class RouteTest extends TestCase
+class AppStartTest extends TestCase
 {
     /**
      * test default route
@@ -13,7 +13,7 @@ class RouteTest extends TestCase
      */
     public function test_index()
     {
-        $response = $this->get( "/" );
+        $response = $this->get( "/fa" );
         $response->assertStatus( 200 );
     }
 }
